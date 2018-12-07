@@ -91,6 +91,7 @@ spec:
       defaultFileFormat: "orc"
       defaultCompression: "zlib"
       metastoreURIs: "thrift://hive-metastore:9083"
+      metastoreTimeout: "1m"
       useHdfsConfigMap: true
       hdfsConfigMapName: hdfs-config
 

@@ -7,6 +7,7 @@ hive.compression-codec=SNAPPY
 hive.hdfs.authentication.type=NONE
 hive.metastore.authentication.type=NONE
 hive.metastore.uri={{ .Values.spec.hive.config.metastoreURIs }}
+hive.metastore-timeout={{ .Values.spec.hive.config.metastoreTimeout }}
 {{- if .Values.spec.config.awsAccessKeyID }}
 hive.s3.aws-access-key={{ .Values.spec.config.awsAccessKeyID }}
 {{- end}}
